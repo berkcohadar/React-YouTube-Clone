@@ -1,0 +1,77 @@
+@use '../../styles/variables.scss';
+
+.header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 56px;
+    padding: 2px 15px;
+    
+    > div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header__start{
+        display: flex;
+        padding: auto 20px;
+        gap: 20px;
+        * {
+            height: 24px;
+            width: auto;
+        }
+        .header__logo{
+            height: 20px;
+        }
+    }
+
+    .header__center{
+        width: 40%;
+        height: 100%;
+        
+        > input {
+            height: 40px;
+            width: 100%;
+            background-color: #0f0f0f;
+            border: 2px solid $color-secondary;
+            outline: $color-secondary !important;
+
+            border-radius: 1px;
+            padding: 0 10px;
+
+            transition: all .1s ease;
+
+            &:focus, &:active, &:hover {
+                border: 2px solid rgba(255,255,255, 0.3);
+            }
+
+        }
+
+        .header__search-icon{
+            display: flex;
+            align-items: center;
+            height: 44px;
+            padding: 0 23px 0 25px;
+            border-radius: 0 1px 1px 0;
+            background: $color-secondary;
+        }
+    }
+
+    .header__extra{
+        display: flex;
+        padding: 0 20px;
+        gap: 20px;
+
+        * {
+            height: 24px;
+            width: 24px;
+        }
+
+        .header__avatar, .header__avatar > img {
+            height: 32px;
+            width: 32px;
+        }
+    }
+}

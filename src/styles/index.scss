@@ -1,0 +1,15 @@
+@import './variables.scss';
+@import '../components/Header/header';
+
+* {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: white;
+}
+
+.app {
+    background: $color-primary;
+    height: 100vh;
+}
