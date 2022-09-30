@@ -1,5 +1,7 @@
 @import './variables.scss';
 @import '../components/Header/header';
+@import '../components/Hamburger/hamburger';
+
 
 * {
     margin: 0;
@@ -12,4 +14,25 @@
 .app {
     background: $color-primary;
     height: 100vh;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+ }
+  
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 80px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }

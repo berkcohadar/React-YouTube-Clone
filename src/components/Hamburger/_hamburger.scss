@@ -1,0 +1,52 @@
+@use '../../styles/variables.scss';
+
+.hamburger{
+    position: absolute;
+    overflow-y: scroll;
+    height: calc(100vh - 56px);
+    width: 250px;
+    background: #212121;
+    padding: 20px auto;
+    ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        li {
+            display: flex;
+            align-items: center;
+            gap:20px;
+            width: calc(100% - 20px);
+            padding: 8px 23px;
+            cursor: pointer;
+            transition: all .2s ease;
+            &.active, &:hover{
+                background-color: $color-secondary;
+            }
+            
+            p {
+                line-height: 20px;
+                font-size: 14px;
+            }
+
+            .MuiAvatar-root {
+                height: 24px;
+                width: 24px;
+            }
+        }
+    }
+    .hamburger__splitter{
+        display: block;
+        min-height: 3px;
+        width: calc(100% - 20px);
+        margin: 20px 0;
+        background: $color-secondary;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: red !important;
+        border-radius: 80px;
+    }
+}
